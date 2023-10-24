@@ -1,0 +1,10 @@
+### Your template template
+.DS_Store
+*.idea
+*node_modules
+gen
+.svn
+.cvs
+.git
+.hg
+*.hprof
