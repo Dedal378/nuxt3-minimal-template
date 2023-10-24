@@ -2,7 +2,52 @@
   // https://nuxt.com/docs/guide/concepts/typescript
   "extends": "./.nuxt/tsconfig.json",
   "compilerOptions": {
+    // add type definitions
+    "types": [
+      "bun-types",
+      "@nuxt/types",
+      "@nuxtjs/axios",
+//      "@nuxtjs/sentry",
+    ],
+    "lib": [
+      "ESNext",
+      "ESNext.AsyncIterable",
+      "DOM"
+    ],
+    "module": "ESNext",
+    "target": "ESNext",
+
+    // if TS 5.x+
+    "moduleResolution": "bundler",
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "moduleDetection": "force",
+
+    // if TS 4.x or earlier
+    // "moduleResolution": "nodenext",
+
+    "allowJs": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+
+    // best practices
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
     "composite": true,
-    "types": ["bun-types"]
-  }
+    "downlevelIteration": true,
+    "allowSyntheticDefaultImports": true,
+
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./*"],
+      "@/*": ["./*"]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    ".nuxt",
+    "dist"
+  ]
 }

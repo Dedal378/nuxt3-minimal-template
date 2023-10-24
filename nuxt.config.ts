@@ -1,4 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+// @ts-ignore
 export default defineNuxtConfig({
   // Заменяется значениями из .env
   runtimeConfig: {
@@ -56,12 +57,16 @@ export default defineNuxtConfig({
   }, */
 
   pinia: {
-    // @ts-ignore
     autoImports: [
       // automatically imports `defineStore`
       'defineStore', // import { defineStore } from 'pinia'
       ['defineStore', 'definePiniaStore'] // import { defineStore as definePiniaStore } from 'pinia'
     ],
+  },
+
+  typescript: {
+    typeCheck: true,
+    strict: true
   },
 
   devtools: {
