@@ -39,7 +39,7 @@ export default defineNuxtConfig({
     '@nuxtjs/eslint-module',
     '@pinia/nuxt',
 
-    // Unocss https://unocss.dev/guide/
+    // Unocss https://unocss.dev/integrations/nuxt
     '@unocss/nuxt'
     // '@nuxtjs/tailwindcss'
   ],

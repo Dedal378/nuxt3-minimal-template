@@ -15,9 +15,9 @@ module.exports = {
     parser: '@typescript-eslint/parser',
   },
   extends: [
+    '@unocss',
     '@nuxtjs/eslint-config-typescript',
     '@vue/eslint-config-prettier/skip-formatting'
-    // '@unocss'
   ],
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
