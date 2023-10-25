@@ -1,14 +1,13 @@
 import {
   defineConfig,
-  presetAttributify,
   presetIcons,
+  presetWebFonts,
   presetUno
 } from 'unocss'
 
 export default defineConfig({
   presets: [
     presetUno(),
-    presetAttributify(),
     presetIcons({
       collections: {
         custom: {
@@ -21,6 +20,27 @@ export default defineConfig({
         display: 'inline-block',
         'vertical-align': 'middle'
       }
+    }),
+    presetWebFonts({
+      provider: 'google',
+      fonts: {
+        // these will extend the default theme
+        sans: 'Roboto',
+        mono: ['Fira Code', 'Fira Mono:400,700'],
+        // custom ones
+        lobster: 'Lobster',
+        lato: [
+          {
+            name: 'Lato',
+            weights: ['400', '700'],
+            italic: true,
+          },
+          {
+            name: 'sans-serif',
+            provider: 'none',
+          }
+        ],
+      },
     })
   ]
 })

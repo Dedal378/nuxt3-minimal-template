@@ -40,6 +40,8 @@
     "eslint-plugin-prettier": "^5.0.1",
     "jsdom": "^22.1.0",
     "nuxt": "^3.8.0",
+    "postcss": "^8.4.31",
+    "postcss-scss": "^4.0.9",
     "prettier": "^3.0.3",
     "prettier-eslint": "^16.1.1",
     "stylelint": "^15.11.0",

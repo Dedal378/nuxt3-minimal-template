@@ -7,7 +7,7 @@
       "bun-types",
       "@nuxt/types",
       "@nuxtjs/axios",
-//      "@nuxtjs/sentry",
+     // "@nuxtjs/sentry",
     ],
     "lib": [
       "ESNext",
